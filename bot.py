@@ -13,6 +13,6 @@ def welcome_message(message):
 def forward_to_admin(message):
     user_info = f"📨 Yangi murojaat:\n👤 Foydalanuvchi: @{message.from_user.username}\n🆔 ID: {message.from_user.id}\n\n💬 Xabar:\n{message.text}"
     bot.send_message(ADMIN_CHAT_ID, user_info)
-    bot.send_message(message.chat.id, "✅ Murojaatingiz adminga yuborildi.")
+    bot.send_message(message.chat.id, "✅ Murojaatingiz uchun rahmat!!!.")
 
 bot.polling()
